@@ -1,0 +1,154 @@
+/* accentcolor #479e79
+maincolor #132237
+secondhelpcolor #73479B */
+body {
+	font-family: 'PT Sans', sans-serif;
+	height: 100%;
+}
+
+section, header {
+	position: relative;
+	margin: 0;
+}
+
+.grid {
+	display: grid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Pt Sans';
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	font-size: 26px;
+	color:#479e79;
+	margin: 0 10px;
+}
+
+h1 {
+	
+	font-weight: 400;
+	font-size: 36px;
+}
+
+h2 {
+	font-family: 'Pt Sans';
+	font-weight: 400;
+	font-size: 20px;
+}
+
+a {
+	color: #022139;
+}
+
+a:hover {
+	background: 
+	-webkit-gradient(linear,left bottom,right top,
+		color-stop(0.1, #479e79),
+		/* color-stop(0.4, #022139), */
+		color-stop(1, #479e79),
+		color-stop(0.6, #022139),
+		color-stop(1, #022139));
+   /* width: 200%; */
+   -webkit-animation: slidetounlock 21s linear infinite;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-size-adjust: none;
+ }
+ 
+ @-webkit-keyframes slidetounlock {
+   0% {
+	 background-position: -720px 0;
+   }
+   100% {
+	 background-position: 720px 0;
+   }
+}
+
+.site-header {
+	top: 0;
+	left: 0;
+	grid-template-columns: 450px 1fr;
+	grid-template-rows: 200px;
+}
+
+.title-wrapper {
+	grid-template-rows: repeat(4, min-content);
+	align-content: center;
+	justify-items: center;
+	min-height: 100vh;
+	background-color: #022139;
+	color: #fff;
+	box-shadow: 3px 0 6px rgba(0,0,0,1);
+}
+
+.title-wrapper > h1 {
+	line-height: 1.6;
+	border-bottom: 2px solid #fff;
+	padding: 5px;
+}
+
+.title-wrapper > h2 {
+	border-bottom: 1px solid #fff;
+	line-height: 1.6;
+	text-align: center;
+	margin: 20px 0;
+	padding: 5px;
+}
+
+.main-h {
+	/* position: absolute; */
+	/* top: 0; */
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.logo {
+	grid-column: 4/5
+}
+
+.nav-menu {
+	grid-column: 6/11;
+	font-size: 26px;
+	margin: 30px 0;
+}
+
+.nav-menu a {
+	margin: 10px;
+}
+
+.nav-menu >ul> li {
+	margin: 30px 10px;
+}
+
+.logo {
+	left: 0;
+}
+
+.form-search {
+	width: 150px;
+	border: 1px solid #aaa;
+	margin: 35px;
+}
+
+.content-wrapper {
+	right: 0;
+	
+}
